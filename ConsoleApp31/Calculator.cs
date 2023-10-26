@@ -6,16 +6,31 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp31
 {
+
+    /// <summary>
+    /// Calculator 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Calculator<T>
     {
-        
 
-        public  Calculator()
+
+        /// <summary>
+        /// Конструктор класса Calculator
+        /// </summary>
+        public Calculator()
         {
         }
 
         public T X { get; set; }
         public T Y { get; set; }
+
+        /// <summary>
+        /// Метод Add Возращает Массив T
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
         public T[]  Add(T x, T y)
         {
 
@@ -29,6 +44,11 @@ namespace ConsoleApp31
             return values;
         }
 
+        /// <summary>
+        /// Возращает нулевой элемент
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public T Zero<T>()
         {
             return default(T);
